@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+    --color-maintext: #282828;
+}
+
+
+.clip-left {
+  clip-path: polygon(
+    0% 0%, 
+    100% 0%, 
+    100% calc(50% - 5px), 
+    calc(90% - 5px) calc(50% - 5px), 
+    calc(90% - 5px) 100%, 
+    0% 100%
+  );
+}
+
+.clip-right {
+  clip-path: polygon(
+    calc(10% + 5px) 0%, 
+    100% 0%, 
+    100% 100%, 
+    0% 100%, 
+    0% calc(50% + 5px), 
+    calc(10% + 5px) calc(50% + 5px)
+  );
+}
